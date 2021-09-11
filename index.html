@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="currency__heading">
+            Valyuta kursini tekshirish
+        </h1>
+    </div>
+
+    <form class="form">
+        <div class="form__money-tablo">
+            <div class="area-currency">
+                <input class="user__value" type="text" required placeholder="Valyuta qiymatini kiriting">
+
+                <select class="form__currency-choose" name="user_currency">
+                    <option value="" selected disabled>Valyuta</option>
+                    <option class="form_currency-type-uzs" value="UZS">So'm</option>
+                    <option class="form_currency-type-rubl" value="RUBL">Rubl</option>
+                    <option class="form_currency-type-usd" value="USD">Dollar</option>
+                    <option class="form_currency-type-euro" value="EURO">Yevro</option>
+                </select>
+            </div>
+            
+
+            <ul class="form-list">
+                <li class="form-list__item form-list__item-sum"></li>
+                <li class="form-list__item form-list__item-rubl"></li>
+                <li class="form-list__item form-list__item-usd"></li>
+                <li class="form-list__item form-list__item-euro"></li>
+            </ul>
+        </div>
+
+        <button class="form__btn" type="submit">
+            OK
+        </button>
+    </form>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
